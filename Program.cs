@@ -32,6 +32,29 @@
             Console.Write("Enter the file path: ");
             string filePath = Console.ReadLine();
             OpeningFile.openFile(filePath);//@"C:\path\to\task3.txt"
+
+            Console.WriteLine();
+            Console.WriteLine("### Task 4 Checking file Path ####");
+            Console.WriteLine();
+
+            Console.WriteLine("Enter a numerical values to resume and non-numerica value to go out):");
+
+            while (true)
+            {
+                try
+                {
+                    string Enteredinput = Console.ReadLine();
+                    double doublevalue = Convert.ToDouble(Enteredinput);
+                    Console.WriteLine($"You entered: {doublevalue}");
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine(" you Entered Non-numeric input ");
+                    
+                }
+                break;
+            }
+
         }
 
 
