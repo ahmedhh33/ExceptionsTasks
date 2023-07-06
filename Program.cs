@@ -26,6 +26,12 @@
 
             age(12);
 
+            Console.WriteLine();
+            Console.WriteLine("### Task 3 Checking file Path ####");
+            Console.WriteLine();
+            Console.Write("Enter the file path: ");
+            string filePath = Console.ReadLine();
+            OpeningFile.openFile(filePath);//@"C:\path\to\task3.txt"
         }
 
 
